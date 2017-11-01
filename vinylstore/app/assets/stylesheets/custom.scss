@@ -3,7 +3,11 @@
 
 /* universal */
 body {
-  padding-top: 45px;
+background: url("/assets/bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 section {
   overflow: auto;
@@ -45,15 +49,37 @@ p {
 
 /* header */
 
+.metal.linear {
+  background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 47%, 
+    hsl(0,0%,78%) 53%,
+    hsl(0,0%,70%)100%);
+}
+
+.metal_header {
+	background: -webkit-linear-gradient(#3e4541 ,#5a615d ); 
+    background: -o-linear-gradient(#6f8076 ,#49544e ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6f8076 ,#49544e );  /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6f8076 ,#3e4541 ); /*(#7e8f7e ,#657565); /* Standard syntax */	
+
+}
+
+
+
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 2em;
-  color: #fff;
+	color:#2f3632;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.6);	
+	font-weight:bold;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 4px;
-  font-weight: bold;
 }
 
 /* footer */
