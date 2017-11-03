@@ -9,13 +9,9 @@ Rails.application.routes.draw do
   
   get '/help', to: 'static_pages#help'
 
-  get '/register', to: 'static_pages#register'
-
-  get '/login', to: 'static_pages#login'
-
   get 'static_pages/profile'
 
-  get '/catalog', to: 'static_pages#catalog'
+  get '/catalog', to: 'items#index'
 
   get '/search', to: 'static_pages#search'
 

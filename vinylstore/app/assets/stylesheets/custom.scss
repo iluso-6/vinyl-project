@@ -1,13 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import url('https://fonts.googleapis.com/css?family=Sonsie+One');
 /* universal */
 body {
-background: url("/assets/bg.png") no-repeat center center fixed;
+background: url("/assets/vinyl-records.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.jumbotron{
+  background-color:#E3E9B8 ;
 }
 section {
   overflow: auto;
@@ -26,6 +29,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color:#fff;
 }
 h1 {
   font-size: 3em;
